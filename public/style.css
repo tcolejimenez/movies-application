@@ -1,20 +1,29 @@
 html, body {
     height: 100%;
     background-color: lightcoral;
-    font-family: 'Kosugi Maru', sans-serif;
-    color: #5b5b5b;
+    font-family: 'Lato', sans-serif;
+    color: #3d3d3d;
 
 }
 
 h1, h2 {
     font-family: 'Lobster', cursive;
     color: #ffe30d;
+    text-shadow: 2px 2px 5px #000;
+
 
 }
 
 button {
     background-color: #ffe30d;
     color: #4d4d4d;
+
+}
+
+button:hover {
+    background-color: #4d4d4d;
+    color: #f2f2f2;
+
 }
 
 .container {

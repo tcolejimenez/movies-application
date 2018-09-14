@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lobster" rel="stylesheet">
 
     <link rel="stylesheet" href="/style.css"/>
+
+    <link rel="icon" href="movies-yellow-2.png">
 </head>
 <body>
 <div class="container mx-auto mt-5">
@@ -16,7 +18,7 @@
     <!--<p>To get started, edit <code>src/index.js</code>.</p>-->
 
     <!-- page title -->
-    <h1>Movies</h1>
+    <span class="d-flex justify-content-between"> <img src="movies.png" alt="movies icon" ><h1>Movies</h1> <img src="movies.png" alt="movies icon" ></span>
     <hr class="hr-4">
     <!-- content -->
     <div id="display-movies">
@@ -58,7 +60,7 @@
                     <input type="radio" name="movie-rating" id="5" value="5">
                     <label for="4">5</label>
                 </p>
-                <button id="add-submit">Add</button>
+                <button id="add-submit" class="btn">Add</button>
             </form>
         </div>
 
@@ -93,14 +95,13 @@
                 <input type="hidden" name="id" id="edit-id" value="">
 
                 <!-- submit button -->
-                <button id="edit-submit">Edit</button>
+                <button id="edit-submit" class="btn">Edit</button>
             </form>
         </div>
 
     </section>
-
-
 </div>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

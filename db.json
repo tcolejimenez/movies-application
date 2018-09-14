@@ -1,8 +1,8 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "5",
+      "title": "Casablanca ",
+      "rating": "4",
       "id": 1
     },
     {
@@ -19,11 +19,6 @@
       "title": "testing movie does it? ",
       "rating": "3",
       "id": 4
-    },
-    {
-      "title": "another thest",
-      "rating": "4",
-      "id": 5
     },
     {
       "title": "test test test ",
