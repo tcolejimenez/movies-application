@@ -1,17 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>My Application</title>
-    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8"/>
+    <title>Movie Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
+<div class="container mx-auto mt-5">
+    <!--<h1>Hello There!</h1>-->
+    <!--<p>To get started, edit <code>src/index.js</code>.</p>-->
 
-    <div class="container">
-        <h1>Hello There!</h1>
-        <p>To get started, edit <code>src/index.js</code>.</p>
+    <!-- page title -->
+    <h1>Movies</h1>
+    <hr class="hr-4">
+    <!-- content -->
+    <div id="display-movies">
+        <span class="movie row d-flex justify-content-between">
+            <h2 class="title" style="width: 340px">Name</h2>
+            <h2 class="rating">Rating</h2>
+            <h2 class="edit" style="width: 200px">Edit</h2>
+        </span>
+
+        <h3 id="info"></h3>
     </div>
 
-    <script src="/main.js"></script>
+    <hr class="hr-4">
+    <section id="operations" class="row">
+
+        <!-- add movie section -->
+        <div id="add-movie" class="col-6">
+            <form>
+                <!-- heading -->
+                <h2>Add Movie</h2>
+
+                <!-- title -->
+                <p>
+                    <label for="movie-title">Movie Title:</label>
+                    <input type="text" id="movie-title" name="movie-title" placeholder="Please enter movie name...">
+                </p>
+
+                <!-- ratings -->
+                <p>
+                    <label>Rating:</label>
+                    <input type="radio" name="movie-rating" id="1" value="1">
+                    <label for="1">1</label>
+                    <input type="radio" name="movie-rating" id="2" value="2">
+                    <label for="2">2</label>
+                    <input type="radio" name="movie-rating" id="3" value="3">
+                    <label for="3">3</label>
+                    <input type="radio" name="movie-rating" id="4" value="4">
+                    <label for="4">4</label>
+                    <input type="radio" name="movie-rating" id="5" value="5">
+                    <label for="4">5</label>
+                </p>
+                <button id="add-submit">Add</button>
+            </form>
+        </div>
+
+
+        <div id="edit-movie" class="col-6">
+            <form>
+
+                <!-- heading -->
+                <h2>Edit Movie</h2>
+
+                <!-- title -->
+                <p>
+                    <label for="movie-title">Movie Title:</label>
+                    <input type="text" id="edit-title" name="edit-title" placeholder="Select a movie to edit...">
+                </p>
+
+                <!-- ratings -->
+                <p>
+                    <label>Rating:</label>
+                    <input type="radio" name="edit-rating" id="edit-1" value="1">
+                    <label for="1">1</label>
+                    <input type="radio" name="edit-rating" id="edit-2" value="2">
+                    <label for="2">2</label>
+                    <input type="radio" name="edit-rating" id="edit-3" value="3">
+                    <label for="3">3</label>
+                    <input type="radio" name="edit-rating" id="edit-4" value="4">
+                    <label for="4">4</label>
+                    <input type="radio" name="edit-rating" id="edit-5" value="5">
+                    <label for="4">5</label>
+                </p>
+
+                <input type="hidden" name="id" id="edit-id" value="">
+
+                <!-- submit button -->
+                <button id="edit-submit">Edit</button>
+            </form>
+        </div>
+
+    </section>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script src="/main.js"></script>
 </body>
 </html>

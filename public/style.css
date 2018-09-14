@@ -1,10 +1,39 @@
 html, body {
     height: 100%;
+    background-color: lightcoral;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #5b5b5b;
+
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+    color: #ffe30d;
+
+}
+
+button {
+    background-color: #ffe30d;
+    color: #4d4d4d;
 }
 
 .container {
-    position: relative;
-    top: 50%;
-    transform: translateY(-100%);
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*transform: translateY(-100%);*/
     text-align: center;
+
 }
+
+.movie {
+    margin: .2em;
+}
+
+.title {
+    margin: .2em;
+}
+
+.rating {
+    margin: .2em;
+}
+
